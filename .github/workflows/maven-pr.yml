@@ -30,7 +30,7 @@ jobs:
     - name: Merge me!
       uses: ridedott/merge-me-action@v1.2.62
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.MEH }}
         GITHUB_LOGIN: mckunda
         MERGE_METHOD: MERGE
 
