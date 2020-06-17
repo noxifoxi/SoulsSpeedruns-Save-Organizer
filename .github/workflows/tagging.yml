@@ -24,9 +24,9 @@ jobs:
       uses: mavrosxristoforos/get-xml-info@1.0
       with:
         # The xml file from which to retrieve information.
-        xml-file: ./pom.xml
+        xml-file: pom.xml
         # The XPath of a node, to fetch its contents as output.
-        xpath: /project/version
+        xpath: '/project/version'
 
     # Runs a set of commands using the runners shell
     - name: Commit tagger
