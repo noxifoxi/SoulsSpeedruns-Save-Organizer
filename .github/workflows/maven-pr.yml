@@ -1,13 +1,11 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Java CI with Maven
+name: [Maven] Pull Request build and merge
 
 on:
-  push:
-    branches: [ master, develop ]
   pull_request:
-    branches: [ master, develop ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -24,3 +22,15 @@ jobs:
     - name: Build with Maven
       shell: bash
       run: mvn -B package --file pom.xml
+  merge:
+    needs: build
+    name: Merge me!
+    runs-on: ubuntu-latest
+    steps:
+    - name: Merge me!
+      uses: ridedott/merge-me-action@v1.2.62
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_LOGIN: mckunda
+        MERGE_METHOD: MERGE
+
