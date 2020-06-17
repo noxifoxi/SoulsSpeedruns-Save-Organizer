@@ -26,7 +26,7 @@ jobs:
         # The xml file from which to retrieve information.
         xml-file: pom.xml
         # The XPath of a node, to fetch its contents as output.
-        xpath: '/project/version'
+        xpath: '//version'
 
     # Runs a set of commands using the runners shell
     - name: Commit tagger
@@ -35,4 +35,4 @@ jobs:
         # The GITHUB_TOKEN secret
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         # Tag text
-        tag: v'/project/version'
+        tag: v'//version'
