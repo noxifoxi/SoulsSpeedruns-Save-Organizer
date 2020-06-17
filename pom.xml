@@ -103,7 +103,7 @@
 						<configuration>
 							<headerType>gui</headerType>
 							<outfile>target/${project.name}.exe</outfile>
-							<icon>src/com/speedsouls/organizer/resources/SpeedSoulsFlameSmall.png</icon>
+							<icon>src/com/speedsouls/organizer/resources/SpeedSoulsIcon.ico</icon>
 							<jar>target/${project.name}-${project.version}-jar-with-dependencies.jar</jar>
 							<errTitle>${project.name}</errTitle>
 							<classPath>
