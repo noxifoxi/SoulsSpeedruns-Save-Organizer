@@ -23,7 +23,8 @@ public enum Game
 	DARK_SOULS_REMASTERED("Dark Souls Remastered", "DSR", "DRAKS0005.sl2"),
 	DARK_SOULS_II("Dark Souls II", "DS2", "DARKSII0000.sl2"),
 	DARK_SOULS_II_SOTFS("Dark Souls II: SotFS", "DS2SOTFS", "DS2SOFS0000.sl2"),
-	DARK_SOULS_III("Dark Souls III", "DS3", "DS30000.sl2");
+	DARK_SOULS_III("Dark Souls III", "DS3", "DS30000.sl2"),
+	SEKIRO_SHADOWS_DIE_TWICE("Sekiro: Shadows Die Twice", "SSDT", "S0000.sl2");
 
 	private String caption;
 	private String abbr;
@@ -40,7 +41,7 @@ public enum Game
 	 * @param abbr the abbreviation of this game
 	 * @param saveName the name of the game's savefile
 	 */
-	private Game(String caption, String abbr, String saveName)
+	Game(String caption, String abbr, String saveName)
 	{
 		this.caption = caption;
 		this.abbr = abbr;
