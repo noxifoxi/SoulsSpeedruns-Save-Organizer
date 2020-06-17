@@ -2,7 +2,7 @@ os: windows
 language: shell
 
 install:
-- choco install jdk11 -y -params "source=false"
+- choco install openjdk11 -y
 - choco install maven -y
 
 script:
