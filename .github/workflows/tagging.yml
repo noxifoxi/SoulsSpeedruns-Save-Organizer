@@ -24,7 +24,7 @@ jobs:
       uses: mavrosxristoforos/get-xml-info@1.0
       with:
         # The xml file from which to retrieve information.
-        xml-file: pom.xml
+        xml-file: $GITHUB_WORKSPACE/pom.xml
         # The XPath of a node, to fetch its contents as output.
         xpath: /project/version
 
