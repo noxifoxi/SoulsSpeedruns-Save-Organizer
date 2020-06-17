@@ -43,6 +43,6 @@ jobs:
       uses: tvdias/github-tagger@v0.0.2
       with:
         # The GITHUB_TOKEN secret
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.MEH }}
         # Tag text
         tag: v${{ steps.jsondata.outputs.version }}
