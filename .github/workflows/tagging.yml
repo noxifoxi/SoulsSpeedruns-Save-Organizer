@@ -37,7 +37,7 @@ jobs:
       with:
         # JSON string
         json: ${{ steps.xml2json.outputs.data }}
-        version: "project.version"
+        version: "project._.version"
 
     - name: Commit tagger
       uses: tvdias/github-tagger@v0.0.2
