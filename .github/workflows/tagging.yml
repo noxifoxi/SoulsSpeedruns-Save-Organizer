@@ -21,6 +21,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: YAML/JSON/XML Converter Action
+      id: xml2json
       uses: fabasoad/yaml-json-xml-converter-action@v1.0.1
       with:
         # Path to the file
@@ -30,12 +31,13 @@ jobs:
         # Format of a file as a result. Possible values: json, xml, yaml.
         to: json
 
-    - name: Read Properties
-      id: read_property
-      uses:  ashley-taylor/read-json-property-action@v1.0
+    - name: Get JSON paths
+      id: jsondata
+      uses: gr2m/get-json-paths-action@v1.0.1
       with:
-        path: pom.json
-        property: project.version
+        # JSON string
+        json: ${{ steps.xml2json.outputs.data }}
+        version: "project.version"
 
     - name: Commit tagger
       uses: tvdias/github-tagger@v0.0.2
@@ -43,4 +45,4 @@ jobs:
         # The GITHUB_TOKEN secret
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         # Tag text
-        tag: v${{ steps.read_property.outputs.value }}
+        tag: v${{ steps.jsondata.outputs.version }}
