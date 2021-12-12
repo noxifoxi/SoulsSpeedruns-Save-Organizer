@@ -24,7 +24,7 @@ public enum Game
 	DARK_SOULS_II("Dark Souls II", "DS2", "DARKSII0000.sl2"),
 	DARK_SOULS_II_SOTFS("Dark Souls II: SotFS", "DS2SOTFS", "DS2SOFS0000.sl2"),
 	DARK_SOULS_III("Dark Souls III", "DS3", "DS30000.sl2"),
-	SEKIRO_SHADOWS_DIE_TWICE("Sekiro: Shadows Die Twice", "SSDT", "S0000.sl2");
+	SEKIRO_SHADOWS_DIE_TWICE("Sekiro: Shadows Die Twice", "SSDT", "S0000.sl2"),
 	ELDEN_RING("ELDEN RING", "ER", "ER0000.sl2");
 
 	private String caption;
