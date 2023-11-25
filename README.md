@@ -1,14 +1,11 @@
-[![Build Status](https://travis-ci.org/Kahmul/SpeedSouls-Save-Organizer.svg?branch=master)](https://travis-ci.org/Kahmul/SpeedSouls-Save-Organizer)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0f60ad59931c4b6e9dc237286a386e36)](https://www.codacy.com/app/kahmul78/SpeedSouls-Save-Organizer?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Kahmul/SpeedSouls-Save-Organizer&amp;utm_campaign=Badge_Grade)
-
-# <img src="https://github.com/Kahmul/SpeedSouls-Save-Organizer/blob/master/src/com/speedsouls/organizer/resources/SpeedSoulsIcon.png"/> SpeedSouls - Save Organizer
+# <img src="src/com/speedsouls/organizer/resources/SpeedSoulsIcon.png"> SpeedSouls - Save Organizer
 
 The SpeedSouls - Save Organizer is a tool designed to manage savefiles for Dark Souls, Dark Souls II, Dark Souls II: Scholar of the First Sin, Dark Souls III and Sekiro: Shadows Die Twice. 
 
 ## Functionality
 
 <p align="center">
-    <img src="https://github.com/Kahmul/SpeedSouls-Save-Organizer/blob/master/docs/images/SaveOrganizerFeatures.png"/>
+    <img src="docs/images/SaveOrganizerFeatures.png">
 </p>
 
 **1.** Choose your game.
@@ -35,7 +32,7 @@ The SpeedSouls - Save Organizer is a tool designed to manage savefiles for Dark 
 
 ## Download
 
-[Latest Release](https://github.com/Kahmul/SpeedSouls-Save-Organizer/releases)
+[Latest Release](https://github.com/noxifoxi/SpeedSouls-Save-Organizer/releases)
 
 
 ## Getting Started
