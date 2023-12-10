@@ -26,7 +26,8 @@ public enum Game
 	DARK_SOULS_III("Dark Souls III", "DS3", "DS30000.sl2"),
 	SEKIRO_SHADOWS_DIE_TWICE("Sekiro: Shadows Die Twice", "SSDT", "S0000.sl2"),
 	ELDEN_RING("ELDEN RING", "ER", "ER0000.sl2"),
-	ELDEN_RING_CO("ELDEN RING Seamless Co-op", "ER", "ER0000.co2");
+	ELDEN_RING_CO("ELDEN RING Seamless Co-op", "ER", "ER0000.co2"),
+	ARMORED_CORE_VI("Armored Core VI: Fires of Rubicon", "AC6", "AC60000.sl2");
 
 	private String caption;
 	private String abbr;
