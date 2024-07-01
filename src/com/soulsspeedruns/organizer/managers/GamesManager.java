@@ -53,6 +53,7 @@ public class GamesManager
 	private static Game darkSouls3;
 	private static Game sekiro;
 	private static Game eldenRing;
+	private static Game eldenRingCoop;
 
 
 	protected static void initialize()
@@ -113,6 +114,9 @@ public class GamesManager
 	 */
 	private static void createCustomGames()
 	{
+		eldenRingCoop = Game.createGame("Elden Ring", "ER", "ER0000.co2", "1245620",
+				"%AppData%" + File.separator + "EldenRing" + File.separator + "<SteamID>", true, false);
+
 		List<String> gameIDs = SettingsManager.getStoredCustomGameIDs();
 
 		for (String gameID : gameIDs)
@@ -169,6 +173,11 @@ public class GamesManager
 	public static void refreshProfiles()
 	{
 		loadGames();
+	}
+
+	public static Game getEldenRingCoop()
+	{
+		return eldenRingCoop;
 	}
 
 
